@@ -1,0 +1,179 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+	Info
+{% endblock %}
+
+{% block links %}
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="static/css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="static/css/icomoon.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="static/css/bootstrap.css">
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="static/css/style.css">
+
+    <style>
+        body {
+            background-color: #683aff;
+        }
+
+        div.gallery {
+          margin: 20px;
+          border: 1px solid #fff;
+          background-color: #683aff;
+          color: #fff;
+          float: left;
+          width: 25em;
+        }
+        
+        div.gallery:hover {
+          border: 1px solid #fff;
+          background-color: #fff;
+          color: #683aff;
+          transition: 500ms;
+        }
+        
+        div.gallery img {
+          width: 100%;
+          height: auto;
+        }
+        
+        div.desc {
+          padding: 15px;
+          text-align: center;
+        }
+
+        .containerdivNewLine { clear: both; float: left; display: block; position: relative; }
+    </style>
+        
+
+{% endblock %}
+
+{% block headscripts %}
+    <!-- Modernizr JS -->
+	<script src="static/js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+{% endblock %}
+
+{% block body %}
+    <div class="spacing">
+        <h2 style="font-weight: bold; text-align: center;">Info</h2>
+    </div>
+
+    <div class="spacing" style="text-align: center;">
+        <h3>Dynamic Gestures</h3>
+    </div>
+
+
+    <div class="gallery">
+        <a target="_blank" href="/static/gifs/Show Desktop.gif">
+            <img src="/static/gifs/Show Desktop.gif">
+        </a>
+        <div class="desc">Show Desktop</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="/static/gifs/Scroll Up.gif">
+            <img src="/static/gifs/Scroll Up.gif">
+        </a>
+        <div class="desc">Scroll Up</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="/static/gifs/Scroll Down.gif">
+            <img src="/static/gifs/Scroll Down.gif">
+        </a>
+        <div class="desc">Scroll Down</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="/static/gifs/Maximize.gif">
+            <img src="/static/gifs/Maximize.gif">
+        </a>
+        <div class="desc">Maximize</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="/static/gifs/Minimize.gif">
+            <img src="/static/gifs/Minimize.gif">
+        </a>
+        <div class="desc">Minimize</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="/static/gifs/Hello.gif">
+            <img src="/static/gifs/Hello.gif">
+        </a>
+        <div class="desc">Hello</div>
+    </div>
+
+    <div style="clear: both; display: block;">
+        <br>
+    </div>
+    <div class="spacing" style="text-align: center; clear: both; display: block;">
+        <h3>Static Gestures</h3>
+    </div>
+
+    <div class="containerdivNewLine gallery">
+        <a target="_blank" href="/static/images/Select All.jpg">
+            <img src="/static/images/Select All.jpg">
+        </a>
+        <div class="desc">Select All</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="/static/images/Switch Window.jpg">
+            <img src="/static/images/Switch Window.jpg">
+        </a>
+        <div class="desc">Switch Window</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="/static/images/Backspace.jpg">
+            <img src="/static/images/Backspace.jpg">
+        </a>
+        <div class="desc">Backspace</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="/static/images/Copy.jpg">
+            <img src="/static/images/Copy.jpg">
+        </a>
+        <div class="desc">Copy</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="/static/images/Paste.jpg">
+            <img src="/static/images/Paste.jpg">
+        </a>
+        <div class="desc">Paste</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="/static/images/Enter.jpg">
+            <img src="/static/images/Enter.jpg">
+        </a>
+        <div class="desc">Enter</div>
+    </div>
+
+    {% block bodyscripts %} 
+        <!-- jQuery -->
+        <script src="static/js/jquery.min.js"></script>
+        <!-- jQuery Easing -->
+        <script src="static/js/jquery.easing.1.3.js"></script>
+        <!-- Bootstrap -->
+        <script src="static/js/bootstrap.min.js"></script>
+        <!-- Waypoints -->
+        <script src="static/js/jquery.waypoints.min.js"></script>
+        <!-- Count Down -->
+        <script src="static/js/simplyCountdown.js"></script>
+        <!-- Main -->
+        <script src="static/js/main.js"></script>
+	{% endblock %} 
+
+{% endblock %}

@@ -1,0 +1,73 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+	Home
+{% endblock %}
+
+{% block links %}
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="static/css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="static/css/icomoon.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="static/css/bootstrap.css">
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="static/css/style.css">
+{% endblock %}
+
+{% block headscripts %}
+    <!-- Modernizr JS -->
+	<script src="static/js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+{% endblock %}
+
+{% block body %}
+	<div class="fh5co-loader"></div>
+
+	<aside id="fh5co-aside" role="sidebar" class="text-center">
+		<h1 id="fh5co-logo">SEIK.<span style="color: #683aff; text-shadow: 9px 9px 18px #2a1766,
+			-9px -9px 18px #825dff;">AI</span></h1>
+		<p>The power of a keyboard, in the palm of your hand.</p>
+		<div class="center">
+			<a href="/list" class="button" target="_blank">Recent Gestures</a>
+		</div>
+		<div class="center">
+			<a href="/info" class="button" target="_blank">Info</a>
+		</div>
+	</aside>
+
+	<!--<div id="fh5co-main-content" style="background-image: url({{ url_for('video_feed') }}); background-repeat: no-repeat; background-size: cover;">-->
+	<div id="fh5co-main-content" style="background: linear-gradient(to top, #2b1869a4, #2b1869a4), url({{ url_for('video_feed') }}); background-repeat: no-repeat; background-size: cover;">
+		<div class="dt js-dt">
+			<div class="dtc js-dtc"></div>
+		</div>
+
+		<div id="fh5co-footer">
+			<div class="row">
+				<div class="col-md-6">
+				</div>
+				<div class="col-md-6 fh5co-copyright">
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	
+	{% block bodyscripts %} 
+	<!-- jQuery -->
+	<script src="static/js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="static/js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="static/js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="static/js/jquery.waypoints.min.js"></script>
+	<!-- Count Down -->
+	<script src="static/js/simplyCountdown.js"></script>
+	<!-- Main -->
+	<script src="static/js/main.js"></script>
+	{% endblock %} 
+{% endblock %}
